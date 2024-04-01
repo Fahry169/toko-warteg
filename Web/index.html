@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Warteg Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+    <script src="app.js"></script>
+
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">
+        <img src="../Gambar/logo.png" alt="" />
+      </a>
+      <i class="bx bx-menu" id="menu-icon"></i>
+      <ul class="navbar">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#products">Products</a></li>
+      </ul>
+
+      <div class="header-icon">
+        <i class="bx bx-cart-alt" id="cart-icon"></i>
+        <i class="bx bx-search-alt-2" id="search-icon"></i>
+      </div>
+      <div class="search-box">
+        <input type="search" name="" id="" placeholder="Search Here..." />
+      </div>
+
+      <div class="shopping-cart">
+        <div class="cart-items">
+          <img src="../Gambar/p1.png" alt="Product 1" />
+          <div class="item-detail">
+            <h3>Product 1</h3>
+            <div class="item-price">Rp 5.0000</div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="home" id="home">
+      <div class="home-text">
+        <h1>Mulai harimu dengan<br />Warteg</h1>
+        <p>Mau Sarapan? Makan Siang? Makan Malam?... Ya Warteg aja!</p>
+        <a href="#" class="btn">Beli sekarang</a>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="../Gambar/about.jpg" alt="" />
+      </div>
+      <div class="about-text">
+        <h2>Our History</h2>
+        <p>
+          Warung tegal (warteg) adalah salah satu jenis usaha gastronomi yang
+          berasal
+          <br />
+          dari Kabupaten Tegal atau di pusat Kota Slawi yang menyediakan makanan
+          dan minuman dengan harga terjangkau. Warung Makanan kami telah buka
+          sejak <br />
+          tahun 1999. Hingga sekarang kami sudah menyediakan berbagai makanan
+          <br />
+          untuk dinikmati oleh para pelanggan.
+        </p>
+      </div>
+    </section>
+
+    <section class="products" id="products" x-data="products">
+      <div class="heading">
+        <h2>Our Products</h2>
+      </div>
+      <div class="products-container">
+        <template x-for="(item, index) in items" x-key="index">
+        <div class="box">
+          <img :src="'img/products/${item.img}'" alt="item.name" />
+          <h3>Tempe Goreng</h3>
+          <div class="content">
+            <span>Rp. 2000;</span>
+            <a href="#">Masuk Keranjang</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="../Gambar/p2.png" alt="" />
+          <h3>Tahu Goreng</h3>
+          <div class="content">
+            <span>Rp. 2000;</span>
+            <a href="#">Masuk Keranjang</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="../Gambar/p3.png" alt="" />
+          <h3>Telur Dadar</h3>
+          <div class="content">
+            <span>Rp. 5000;</span>
+            <a href="#">Masuk Keranjang</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="../Gambar/p4.png" alt="" />
+          <h3>Nasi Putih</h3>
+          <div class="content">
+            <span>Rp. 5000;</span>
+            <a href="#">Masuk Keranjang</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="../Gambar/p5.png" alt="" />
+          <h3>Tumis Kangkung</h3>
+          <div class="content">
+            <span>Rp. 3000;</span>
+            <a href="#">Masuk Keranjang</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="../Gambar/p6.png" alt="" />
+          <h3>Kentang Balado</h3>
+          <div class="content">
+            <span>Rp. 3000;</span>
+            <a href="#">Masuk Keranjang</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="../Gambar/p7.png" alt="" />
+          <h3>Tongkol Balado</h3>
+          <div class="content">
+            <span>Rp. 6000;</span>
+            <a href="#">Masuk Keranjang</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="../Gambar/p8.png" alt="" />
+          <h3>Lele Goreng</h3>
+          <div class="content">
+            <span>Rp. 5000;</span>
+            <a href="#">Masuk Keranjang</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="../Gambar/p9.png" alt="" />
+          <h3>Ayam Goreng</h3>
+          <div class="content">
+            <span>Rp. 7000;</span>
+            <a href="#">Masuk Keranjang</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="../Gambar/p10.png" alt="" />
+          <h3>Perkedel</h3>
+          <div class="content">
+            <span>Rp. 2000;</span>
+            <a href="#">Masuk Keranjang</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="../Gambar/p11.png" alt="" />
+          <h3>Sayur Asam</h3>
+          <div class="content">
+            <span>Rp. 3000;</span>
+            <a href="#">Masuk Keranjang</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="../Gambar/p12.png" alt="" />
+          <h3>Sayur Sop</h3>
+          <div class="content">
+            <span>Rp. 3000;</span>
+            <a href="#">Masuk Keranjang</a>
+          </div>
+        </div>
+      </template>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="footer-box">
+        <h2>Warung Tegal</h2>
+        <p>Kunjungi Sosial Media Kami di Bawah ini.</p>
+        <div class="social">
+          <a href="#"><i class="bx bxl-facebook"></i></a>
+          <a href="#"><i class="bx bxl-twitter"></i></a>
+          <a href="#"><i class="bx bxl-instagram"></i></a>
+          <a href="#"><i class="bx bxl-tiktok"></i></a>
+        </div>
+      </div>
+      <div class="footer-box">
+        <h3>Support</h3>
+        <li><a href="#">Product</a></li>
+        <li><a href="#">Help & Support</a></li>
+        <li><a href="#">Return Policy</a></li>
+        <li><a href="#">Term Of Use</a></li>
+      </div>
+      <div class="footer-box">
+        <h3>View Guides</h3>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Blog Posts</a></li>
+        <li><a href="#">Our Branches</a></li>
+      </div>
+
+      <div class="footer-box">
+        <h3>Contact</h3>
+        <div class="contact">
+          <span
+            ><i class="bx bxs-map"></i>Jl. Kolonel Sudiarto, Slerok, Kec. Tegal
+            Timur, Kota Tegal.</span
+          >
+          <span><i class="bx bxs-phone"></i>+62851-5511-5692</span>
+          <span><i class="bx bxs-envelope"></i>warteg@gmail.com</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="copyright">
+      <p>&#169; Warteg All Right Reversed</p>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
