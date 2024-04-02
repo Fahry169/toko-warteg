@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-pading-top: 4rem;
+    scroll-padding-top: 4rem;
     scroll-behavior: smooth;
     list-style: none;
     text-decoration: none;
@@ -68,10 +68,10 @@ header{
 
 .header-icon {
     font-size: 22px;
-    curson: pointer;
+    cursor: pointer;
     z-index: 10000;
     display: flex;
-    coloumn-gap: 0.8rem;
+    column-gap: 0.8rem;
 }
 
 .header-icon .bx{
@@ -164,7 +164,7 @@ header{
     background-size: cover;
     background-position: center;
     display: grid;
-    grid-template-coloumns: repeat(auto-fit, minmax(17rem, auto));
+    grid-template-columns: repeat(auto-fit, minmax(17rem, auto));
     align-items: center;
     gap: 1.5rem;
 }
@@ -311,7 +311,7 @@ header{
 .social{
     display: flex;
     align-items: center;
-    coloumn-gap: 1rem;
+    column-gap: 1rem;
 }
 
 .social a .bx{
