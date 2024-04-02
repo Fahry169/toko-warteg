@@ -129,7 +129,7 @@ header{
     padding: 0 1.5rem;
     color: var(--text-color);
     background-color: #edeae3;
-    transition: 0.3s linear;
+    transition: 0.3s;
 }
 
 .shopping-cart.active {

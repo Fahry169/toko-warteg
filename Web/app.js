@@ -1,7 +1,7 @@
 document.addEventListener('alpine:init', () => {
     Alpine.data('products', () => ({
         items: [
-            { id: 1, name: 'Tempe Goreng', img: '../Gambar/p1.png', price: 2000},
+            { id: 1, name: 'Tempe Goreng', img: 'p1.png', price: 2000},
             { id: 2, name: 'Tahu Goreng', img: 'p2.png', price: 2000},
             { id: 3, name: 'Telur Dadar', img: 'p3.png', price: 5000},
             { id: 4, name: 'Nasi Putih', img: 'p4.png', price: 5000},
@@ -15,4 +15,25 @@ document.addEventListener('alpine:init', () => {
             { id: 12, name: 'Sayur Sop', img: 'p12.png', price: 3000},
         ]
     }));
+
+
+    Alpine.store('cart', {
+        items: [],
+        total: 0,
+        quantity: 0,
+        add(newItem) {
+            // this.items.push(newItem);
+            // this.quantity++;
+            // this.total += newItem.price;
+            console.log(newItem);
+        }
+    })
 });
+
+const rupiah = (number) => {
+    return new Intl.NumberFormat('id-ID', {
+        style: 'currency',
+        currency: 'IDR', 
+        minimumFractionDigits: 0,
+    }).format(number);
+};
