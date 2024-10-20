@@ -160,14 +160,18 @@ header{
     margin-top: -20px;
 }
 
+.shopping-cart .remove {
+    padding: 0px 3px;
+}
+
 .shopping-cart h3{
-    font-size: 0.9rem;
+    font-size: 1rem;
     padding-bottom: 0.3rem;
     margin-top: -20px;
 }
 
 .shopping-cart .item-price{
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 .shopping-cart .cart-items{
@@ -180,7 +184,7 @@ header{
 }
 
 .shopping-cart h4 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     margin-top: -1rem;
     text-align: center;
 }
