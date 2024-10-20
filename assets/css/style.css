@@ -160,7 +160,7 @@ header{
     margin-top: -20px;
 }
 
-.shopping-cart .remove {
+.shopping-cart .remove, .add {
     padding: 0px 3px;
 }
 
